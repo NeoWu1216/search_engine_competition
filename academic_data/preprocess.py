@@ -11,9 +11,28 @@ with open('Academic_papers/docs.json', 'r') as infile:
             pass
         try:
             doc_content += ' '.join(document['keyPhrases']) + ' '
+            doc_content += ' '.join(document['keyPhrases']) + ' '
+            doc_content += ' '.join(document['keyPhrases']) + ' '
+            doc_content += ' '.join(document['keyPhrases']) + ' '
+            doc_content += ' '.join(document['keyPhrases']) + ' '
+            doc_content += ' '.join(document['keyPhrases']) + ' '
+            doc_content += ' '.join(document['keyPhrases']) + ' '
+            doc_content += ' '.join(document['keyPhrases']) + ' '
+            doc_content += ' '.join(document['keyPhrases']) + ' '
+            doc_content += ' '.join(document['keyPhrases']) + ' '
         except:
             pass
         try:
+            doc_content += ' '.join(document['title']) + ' '
+            doc_content += ' '.join(document['title']) + ' '
+            doc_content += ' '.join(document['title']) + ' '
+            doc_content += ' '.join(document['title']) + ' '
+            doc_content += ' '.join(document['title']) + ' '
+            doc_content += ' '.join(document['title']) + ' '
+            doc_content += ' '.join(document['title']) + ' '
+            doc_content += ' '.join(document['title']) + ' '
+            doc_content += ' '.join(document['title']) + ' '
+            doc_content += ' '.join(document['title']) + ' '
             doc_content += ' '.join(document['title']) + ' '
         except:
             pass
