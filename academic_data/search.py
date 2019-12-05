@@ -72,7 +72,8 @@ def query(string):
     q.content(string)
     # Get documents
     top_docs = ranker.score(idx, q, num_results=100)
-    rocchio = metapy.index.Rocchio(fwd_idx, ranker, 0.8, 0.9, 20)    
+    rocchio = metapy.index.Rocchio(fwd_idx, ranker, 0.9, 0.9, 25, 100)    
+    #rocchio = metapy.index.KLDivergencePRF(fwd_idx, ranker, 0.6, 0.5, 20)    
     top_docs = rocchio.score(idx, q, 30)
     # Construct search results
     search_result = ""
